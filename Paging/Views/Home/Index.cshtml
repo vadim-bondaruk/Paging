@@ -1,0 +1,9 @@
+﻿@model Paging.Models.PageInfo
+@using Paging.Helpers
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Html.PageLinks(Model, i => Url.Action("Index", new { id = i}))
